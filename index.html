@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="source.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img class="planet" src="images/mars.png">
+            <img class="rocket" id="letadlo" src="images/rocket.png">
+        </div>
+        <div class="control-panel">
+        <div class="control-panel__inner">
+            <input type="password" name="passes" placeholder="input password" id="passField"/>
+            <input type="button" name="passes" value="OK" onclick="password_input()" class="buttons"/>
+            <div class="check-buttons">
+                <input type="checkbox" name="inputs" disabled="true"/>
+                <input type="checkbox" name="inputs" disabled="true"/>
+                <input type="checkbox" name="inputs" disabled="true"/>
+                <input type="checkbox" name="inputs" disabled="true"/>
+                <input type="checkbox" name="inputs" disabled="true"/>
+                <input type="checkbox" name="inputs" disabled="true"/>
+            </div>
+            <div class="levers">
+                <input type="range" name="inputs" disabled="true"/>
+                <input type="range" name="inputs" disabled="true"/>
+                <input type="range" name="inputs" disabled="true"/>
+                <input type="range" name="inputs" disabled="true"/>
+                <input type="range" name="inputs" disabled="true"/>
+            </div>
+            <input type="button" onclick="launch_rocket()" value="LAUNCH" disabled="true"  id="launchButton" class="buttons">
+        </div>
+        </div>
+    </div>
+</body>
+</html>

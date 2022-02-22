@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+}
+.space{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url("images/space.png");
+    background-repeat: repeat;
+    z-index: 1;
+    position: relative;
+    display: flex;
+
+}
+.planet-area{
+    /*border: red 1px solid;*/
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+.planet{
+    z-index: 2;
+}
+.rocket{
+    z-index: 5;
+    /*border: green 2px solid;*/
+    transform: rotateZ(30deg) translateX(-550px) translateY(170px) scale(0.2);
+
+}
+.control-panel{
+    /*border: yellow 2px solid;*/
+    height: 410px;
+    width: 270px;
+    margin-left: 10%;
+    margin-top: 15%;
+    padding: 10px;
+    background-color: black;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, yellow 35px, yellow 70px);
+}
+.control-panel__inner{
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    background: darkslategrey;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+}
+.check-buttons{
+    border: red 1px solid;
+    transform: scale(1.5);
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin: auto;
+    height: 30px;
+}
+.levers{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+.buttons{
+    width: 70px;
+    height: 40px;
+    background: yellow;
+    border-radius: 30px;
+}
+#launchButton{
+    height: 60px;
+    width: 120px;
+    position: relative;
+    font-size: 20px;
+    margin: auto;
+}
+.levers input{
+    transform: rotateZ(-90deg) translateY(80px);
+    margin-top: 10%;
+    margin-left: -120px;
+}
+#passField{
+    height: 35px;
+    border: red 4px dashed;
+    color: green;
+}
